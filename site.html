@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Banco de Provas</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins, sans-serif;
+}
+
+body{
+color:white;
+min-height:100vh;
+overflow-x:hidden;
+}
+
+#particles-js{
+position:fixed;
+width:100%;
+height:100%;
+z-index:-1;
+background:linear-gradient(135deg,#020617,#0f172a);
+}
+
+header{
+text-align:center;
+padding:50px 20px;
+}
+
+header h1{
+font-size:42px;
+font-weight:600;
+}
+
+header p{
+opacity:0.7;
+margin-top:10px;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:30px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.card{
+background:rgba(30,41,59,0.6);
+backdrop-filter:blur(10px);
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,0.5);
+transition:0.35s;
+}
+
+.card:hover{
+transform:translateY(-8px) scale(1.03);
+}
+
+.card h2{
+margin-bottom:20px;
+}
+
+.buttons{
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.btn{
+text-decoration:none;
+text-align:center;
+padding:12px;
+border-radius:10px;
+transition:0.25s;
+font-size:14px;
+}
+
+.open{
+background:#3b82f6;
+color:white;
+}
+
+.open:hover{
+background:#2563eb;
+}
+
+.download{
+background:#22c55e;
+color:white;
+}
+
+.download:hover{
+background:#16a34a;
+}
+
+footer{
+text-align:center;
+padding:30px;
+opacity:0.6;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="particles-js"></div>
+
+<header>
+<h1>📚 Banco de Provas</h1>
+<p>Abra ou baixe provas de vestibulares</p>
+</header>
+
+<div class="container">
+
+<div class="card">
+<h2>FAMEMA • 1ª Fase</h2>
+<div class="buttons">
+<a class="btn open" target="_blank"
+href="https://drive.google.com/file/d/1TF-JQeZib7l5sABjjekocYcC-kXwwwPA/preview">
+Abrir Prova
+</a>
+
+<a class="btn download"
+href="https://drive.google.com/uc?export=download&id=1TF-JQeZib7l5sABjjekocYcC-kXwwwPA">
+Baixar PDF
+</a>
+</div>
+</div>
+
+<div class="card">
+<h2>FAMEMA • 2ª Fase</h2>
+<div class="buttons">
+<a class="btn open" target="_blank"
+href="https://drive.google.com/file/d/1XJcpn6I5-RFch6jvr_VxVfu9uHvyn0g5/preview">
+Abrir Prova
+</a>
+
+<a class="btn download"
+href="https://drive.google.com/uc?export=download&id=1XJcpn6I5-RFch6jvr_VxVfu9uHvyn0g5">
+Baixar PDF
+</a>
+</div>
+</div>
+
+<div class="card">
+<h2>UNESP</h2>
+<div class="buttons">
+<a class="btn open" target="_blank"
+href="https://drive.google.com/file/d/1Hj80QXxqTzQ54JXWpbJc8VXIgIvkjYOb/preview">
+Abrir Prova
+</a>
+
+<a class="btn download"
+href="https://drive.google.com/uc?export=download&id=1Hj80QXxqTzQ54JXWpbJc8VXIgIvkjYOb">
+Baixar PDF
+</a>
+</div>
+</div>
+
+<div class="card">
+<h2>ENEM • Amarelo</h2>
+<div class="buttons">
+<a class="btn open" target="_blank"
+href="https://drive.google.com/file/d/1M4CMJYvLQlMIyqHakwDcrDjSjBo6neIC/preview">
+Abrir Prova
+</a>
+
+<a class="btn download"
+href="https://drive.google.com/uc?export=download&id=1M4CMJYvLQlMIyqHakwDcrDjSjBo6neIC">
+Baixar PDF
+</a>
+</div>
+</div>
+
+<div class="card">
+<h2>ENEM • Cinza</h2>
+<div class="buttons">
+<a class="btn open" target="_blank"
+href="https://drive.google.com/file/d/1XqdccVDIVgZ0RHk0OpQEWHNpyN8la4hE/preview">
+Abrir Prova
+</a>
+
+<a class="btn download"
+href="https://drive.google.com/uc?export=download&id=1XqdccVDIVgZ0RHk0OpQEWHNpyN8la4hE">
+Baixar PDF
+</a>
+</div>
+</div>
+
+</div>
+
+<footer>
+Plataforma de estudos • Banco de provas
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+<script>
+particlesJS("particles-js",{
+"particles":{
+"number":{"value":80},
+"color":{"value":"#ffffff"},
+"shape":{"type":"circle"},
+"opacity":{"value":0.3},
+"size":{"value":3},
+"line_linked":{
+"enable":true,
+"distance":150,
+"color":"#ffffff",
+"opacity":0.2,
+"width":1
+},
+"move":{
+"enable":true,
+"speed":2
+}
+},
+"interactivity":{
+"events":{
+"onhover":{"enable":true,"mode":"repulse"}
+}
+}
+});
+</script>
+
+</body>
+</html>
